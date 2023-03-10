@@ -1,0 +1,57 @@
+.navbarContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.navbarContainer main{
+  padding: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navMenu {
+  display: none;
+}
+.navMenuBurgerIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.navMenuBurgerIcon p {
+  background-color: white;
+  width: 40px;
+  height: 5px;
+}
+.navMenuBurgerInfoContainer {
+  display: none;
+  width: 40px;
+}
+.navMenuBurgerInfoContainer ul {
+  background-color: var(--tertiaryColor);
+  border-radius: 5px;
+  z-index: 10;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.navMenuBurgerInfoContainer ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navMenuBurger {
+    display: none;
+  }
+  .navMenu {
+    display: inline-block;
+  }
+  .navMenu ul {
+    display: flex;
+    gap: 10px;
+  }
+  .navMenu ul li {
+    list-style: none;
+  }
+}

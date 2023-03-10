@@ -1,0 +1,15 @@
+<div class="homepageContainer">
+  <section class="heroContainer">
+    <main class="heroInfo">
+      <h1>Food Media</h1>
+      <p>Our hero application allows you to easily search for recipes based on dietary preferences, cooking time, and level of difficulty. Whether you're a beginner or an experienced chef, our app has something for everyone.</p>
+      <button>Upload</button>
+    </main>
+  </section>
+  <section>
+    <h2>Photos</h2>
+    <% data.map((e)=>{ %>
+      <img src="<%= e %>" alt="Photo" width="300px">
+    <% }) %>
+  </section>
+</div>
