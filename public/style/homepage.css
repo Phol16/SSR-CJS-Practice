@@ -30,6 +30,22 @@
   background: transparent;
   color: var(--secondaryColor);
 }
+.uploadButton{
+  display: flex;
+}
+.uploadButton button{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.buttonUpload{
+  cursor: pointer;
+  padding: 10px;
+  width: fit-content;
+}
+#upload{
+  display: none;
+}
 @media only screen and (min-width: 440px){
   .heroInfo h1{
     font-size: x-large;
@@ -37,7 +53,7 @@
   .heroInfo p{
     max-width: 300px;
   }
-  .heroInfo button{
+  .heroInfo .uploadButton{
     align-self: flex-end;
   }
 }
