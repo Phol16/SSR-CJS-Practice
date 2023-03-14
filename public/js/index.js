@@ -1,8 +1,9 @@
 const image = document.querySelector('#upload')
 const submit = document.querySelector('#submit')
+const prev = document.querySelector('#prevButton')
+const next = document.querySelector('#nextButton')
 
 submit.addEventListener('click',(e)=>{
-
   if(image.value){
     const reader = new FileReader()
     reader.readAsDataURL(image.files[0])

@@ -4,16 +4,16 @@
       <h1>Food Media</h1>
       <p>Our hero application allows you to easily search for recipes based on dietary preferences, cooking time, and level of difficulty. Whether you're a beginner or an experienced chef, our app has something for everyone.</p>
       <div class="uploadButton">
-        <label for="upload" ><div class="buttonUpload">Upload</div></label>
+        <label for="upload"><div class="buttonUpload">Upload</div></label>
         <button type="submit" id="submit">Submit</button>
       </div>
-      <input type="file" accept="image/*" id="upload">
+      <input type="file" accept="image/*" id="upload" />
     </main>
   </section>
   <section>
     <h2>Photos</h2>
-      <% data.map((e)=>{ %>
-        <img src="<%=e.image%>" alt="Photo" width="400">
-        <% })%>
+    <% data.map((e)=>{ %>
+    <img src="<%=e.image%>" alt="Photo" width="200" />
+    <% })%>
   </section>
 </div>
